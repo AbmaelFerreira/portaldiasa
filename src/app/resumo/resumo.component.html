@@ -1,0 +1,98 @@
+        
+        <div class="resumo"> <!--Primeira linha-->
+
+                <div class="painel-chamado"> 
+                
+                        <app-painel-simples  titulo="OS Abertas" tipo="bg-success">
+                               
+                                <div class="alert sm alert-success">{{ordem.abertas.total.total}}</div>
+                        </app-painel-simples>
+                </div>
+
+                <div class="painel-chamado"> 
+                
+                        <app-painel-simples situacao="Aberta"   titulo=" Hoje" tipo="bg-info">
+                                <h3>{{ordem.abertas.hoje.total}}</h3>
+                        </app-painel-simples>
+                </div>
+
+                <div class="painel-chamado"> 
+                
+                        <app-painel-simples  situacao="Aberta"  titulo=" Semana" tipo="bg-info">
+                                <h3>{{ordem.abertas.semana.total}}</h3>
+                        </app-painel-simples>
+                </div>
+
+                <div class="painel-chamado"> 
+                
+                        <app-painel-simples situacao="Aberta"  titulo=" Mês" tipo="bg-info">
+                                <h3>{{ordem.abertas.mes.total}}</h3>
+                        </app-painel-simples>
+                </div>
+
+                <div class="painel-chamado"> 
+                
+                        <app-painel-simples situacao="Aberta" titulo=" Ano" tipo="bg-info">
+                                <h3>{{ordem.abertas.ano.total}}</h3>
+                        </app-painel-simples>
+                </div>
+
+                
+        </div>
+
+
+        <div class="linha2"> <!--Segunda linha-->
+
+                        <div class="painel-chamado " style="padding: 105px;"> 
+                                     
+                               
+                        </div>
+                        
+                        <div class="painel-chamado"> 
+                        
+                                <app-painel-simples situacao="Fechada" titulo="Hoje" tipo="bg-danger">
+                                        <h3>{{ordem.fechadas.hoje}}</h3> 
+                                        <div class="alert sm alert-success media ">
+                                                <b>100%</b>
+                                        </div>
+                                </app-painel-simples>
+                        </div>
+        
+                        <div class="painel-chamado"> 
+                        
+                                <app-painel-simples situacao="Fechada"  titulo="Semana" tipo="bg-info">
+                                        <h3>{{ordem.fechadas.semana}}</h3>
+                                        <div class="alert sm alert-success media ">
+                                                <b>97,82%</b>
+                                        </div>
+                                </app-painel-simples>
+                        </div>
+        
+                        <div class="painel-chamado"> 
+                        
+                                <app-painel-simples  situacao="Fechada" titulo=" Mês" tipo="bg-info">
+                                        <h3>{{ordem.fechadas.mes}}</h3>
+                                        <div class="alert sm alert-success media ">
+                                                <b>97,82%</b>
+                                        </div>
+                                </app-painel-simples>
+                        </div>
+        
+                        <div class="painel-chamado"> 
+                        
+                                <app-painel-simples  situacao="Fechada" titulo="Ano" tipo="bg-info">
+                                        <h3>{{ordem.fechadas.ano}}</h3>
+                                        <div class="alert sm alert-success media ">
+                                                <b>50%</b>
+                                        </div>
+
+                                </app-painel-simples>
+                        </div>
+                </div>
+   
+
+
+
+
+    
+

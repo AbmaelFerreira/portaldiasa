@@ -1,0 +1,41 @@
+
+/*
+*/
+
+* { box-sizing: border-box; }
+
+.painel-chamado {
+       
+    margin: auto;
+    display: flex;
+
+}
+
+
+.resumo{
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 2000px;
+    width: 100%;
+    background-color: #ededee;
+    margin: 10px ;
+    flex-direction:row ;
+}
+
+.media{
+    padding: 5px;
+    font-size: 20px;
+    margin:  0;
+    float: left;
+}
+
+.linha2{
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 2000px;
+    width: 100%;
+    background-color: #ededee;
+    margin: 10px ;
+    justify-content: flex-end;
+}
+

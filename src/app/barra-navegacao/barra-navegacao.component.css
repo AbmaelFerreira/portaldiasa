@@ -1,0 +1,17 @@
+.navbar{
+    margin:  0;
+    border-radius: 0;
+}
+
+
+.navbar-toggler{
+    display: inline-block;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.sair{
+    float: right;
+    text-decoration: none;
+    color: white;
+ 
+}
