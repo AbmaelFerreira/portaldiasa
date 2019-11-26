@@ -9,6 +9,8 @@ import { BarraNavegacaoComponent } from './barra-navegacao/barra-navegacao.compo
 import { MenuLateralComponent } from './barra-navegacao/menu-lateral/menu-lateral.component';
 import { ResumoComponent } from './resumo/resumo.component';
 import { PainelSimplesComponent } from './painel-simples/painel-simples.component';
+import { ConsultaAbertasHojeComponent } from './consulta/consulta-abertas-hoje/consulta-abertas-hoje.component';
+import { ConsultaComponent } from './consulta/consulta.component';
 
 
 @NgModule({
@@ -23,7 +25,11 @@ import { PainelSimplesComponent } from './painel-simples/painel-simples.componen
    
     ResumoComponent,
    
-    PainelSimplesComponent
+    PainelSimplesComponent,
+   
+    ConsultaAbertasHojeComponent,
+   
+    ConsultaComponent
    
     
   ],
