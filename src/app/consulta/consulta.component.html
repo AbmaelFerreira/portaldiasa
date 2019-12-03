@@ -1,69 +1,57 @@
+<fieldset class="scheduler-border">
+    <legend class="scheduler-border">Ordens Abertas Hoje</legend>
+    <table class="table table-bordered table-dark table-hover ">
+        <!-- <div [ngClass]="consultas.abertas.un = 001 ? 'table-danger': 'table-success'">-->
+        <thead>
+            <tr>
+                <th scope="col">#</th>
+                <th scope="col">UN</th>
+                <th scope="col">DT_OS</th>
+                <th scope="col">Terceiro</th>
+                <th scope="col">Data Cigam</th>
+                <th scope="col">Situação Item</th>
+                <th scope="col">Tipo de OS</th>
+                <th scope="col">Solicitante</th>
+                <th scope="col">Tecnico</th>
+                <th scope="col">Dias</th>
+                <th scope="col">Reclamado</th>
+                <th scope="col">Data acompanhamento</th>
+                <th scope="col">Ultimo acompanhamento</th>
 
-<table class="table table-hover table-dark">
+            </tr>
+        </thead>
 
-    <thead>
-      <tr>
-        <th scope="col">#</th>
-        <th scope="col">UN</th>
-        <th scope="col">DT_OS</th>
-        <th scope="col">Terceiro</th>
-        <th scope="col">Data Cigam</th>
-        <th scope="col">Situação Item</th>
-        <th scope="col">Tipo de OS</th>
-        <th scope="col">Solicitante</th>
-        <th scope="col">Tecnico</th>
-        <th scope="col">Dias</th>
-        <th scope="col">Reclamado</th>
-        <th scope="col">Data acompanhamento</th>
-        <th scope="col">Ultimo acompanhamento</th>
-      </tr>
-    </thead>
+        <tbody>
+            <tr *ngFor="let consulta of consultas.abertas">
 
-    <tbody>
-      <tr>
-        <th scope="row">1</th>
-        <td>Mark</td>
-        <td>Otto</td>
-        <td>@mdo</td>
-        <td>@mdo</td>
-        <td>@mdo</td>
-        <td>@mdo</td>
-        <td>@mdo</td>
-        <td>@mdo</td>
-        <td>@mdo</td>
-        <td>@mdo</td>
-        <td>@mdo</td>
-        <td>@mdo</td>
-      </tr>
-      <tr>
-        <th scope="row">2</th>
-        <td>Jacob</td>
-        <td>Thornton</td>
-        <td>@fat</td>
-        <td>@mdo</td>
-        <td>@mdo</td>
-        <td>@mdo</td>
-        <td>@mdo</td>
-        <td>@mdo</td>
-        <td>@mdo</td>
-        <td>@mdo</td>
-        <td>@mdo</td>
-        <td>@mdo</td>
+                <th scope="row">1</th>
+                <td>{{consulta.un}}</td>
+                <td>{{consulta.dt_os}}</td>
+                <td>{{consulta.terceiro}}</td>
+                <td>{{consulta.dt_cigam}}</td>
+                <td>{{consulta.sit_item}}</td>
+                <td>{{consulta.tipo_osun}}</td>
+                <td>{{consulta.solicitante}}</td>
+                <td>{{consulta.tecnico}}</td>
+                <td>{{consulta.dias}}</td>
+                <td>{{consulta.reclamado}}</td>
+                <td>{{consulta.dt_acomp}}</td>
+                <td>{{consulta.ult_acomp}}</td>
 
-      </tr>
-      
-</tbody>
+            </tr>
+        </tbody>
 
-</table>
+    </table>
 
 
 
-<nav aria-label="Page navigation example">
-    <ul class="pagination">
-      <li class="page-item"><a class="page-link" href="#">Previous</a></li>
-      <li class="page-item"><a class="page-link" href="#">1</a></li>
-      <li class="page-item"><a class="page-link" href="#">2</a></li>
-      <li class="page-item"><a class="page-link" href="#">3</a></li>
-      <li class="page-item"><a class="page-link" href="#">Next</a></li>
-    </ul>
-  </nav>
+    <nav aria-label="Page navigation example">
+        <ul class="pagination">
+            <li class="page-item"><a class="page-link" href="#">Previous</a></li>
+            <li class="page-item"><a class="page-link" href="#">1</a></li>
+            <li class="page-item"><a class="page-link" href="#">2</a></li>
+            <li class="page-item"><a class="page-link" href="#">3</a></li>
+            <li class="page-item"><a class="page-link" href="#">Next</a></li>
+        </ul>
+    </nav>
+</fieldset>

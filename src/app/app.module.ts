@@ -11,6 +11,7 @@ import { ResumoComponent } from './resumo/resumo.component';
 import { PainelSimplesComponent } from './painel-simples/painel-simples.component';
 import { ConsultaAbertasHojeComponent } from './consulta/consulta-abertas-hoje/consulta-abertas-hoje.component';
 import { ConsultaComponent } from './consulta/consulta.component';
+import { RouterModule } from '@angular/router';
 
 
 @NgModule({
@@ -35,7 +36,8 @@ import { ConsultaComponent } from './consulta/consulta.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    RouterModule
   ],
   providers: [],
   bootstrap: [AppComponent]

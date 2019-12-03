@@ -7,38 +7,38 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ResumoComponent implements OnInit {
   ordem = {
-       abertas : {
-               total : {
-                            total : 32990,
-                       },
-               hoje : {
-                        total : 2,
-                      },
-               semana : {
-                        total : 92,
-                        },
-               mes : {
-                        total : 692,
-                        },
-               ano : {
-                        total : 992,
-                      }
-     },
+    abertas: {
+      total: {
+        total: 32990,
+      },
+      hoje: {
+        total: 2,
+      },
+      semana: {
+        total: 92,
+      },
+      mes: {
+        total: 692,
+      },
+      ano: {
+        total: 992,
+      }
+    },
 
-     fechadas : {
-        
-        hoje : 2,
-        semana :90,
-        mes : 600,
-        ano : 400
-     }
+    fechadas: {
+
+      hoje: 2,
+      semana: 90,
+      mes: 600,
+      ano: 400
     }
+  }
 
   constructor() { }
 
   ngOnInit() {
 
-    
+
   }
 
 }

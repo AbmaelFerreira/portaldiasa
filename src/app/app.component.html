@@ -1,21 +1,22 @@
+<header>
 
-<header >
-  
-        <app-barra-navegacao  (onToggle)="menulateral.toggle()"></app-barra-navegacao>
-        
-       
+    <app-barra-navegacao (onToggle)="menulateral.toggle()"></app-barra-navegacao>
+
+
 </header>
 
 
 <div class="main">
-        
-        <app-menu-lateral #menulateral ></app-menu-lateral>
+
+    <app-menu-lateral #menulateral></app-menu-lateral>
 
     <div class="content">
-            
-        
-        <!--<app-resumo></app-resumo>-->
-        <app-consulta-abertas-hoje></app-consulta-abertas-hoje>
-      
+
+
+        <!--<app-resumo></app-resumo>
+        <app-consulta></app-consulta>-->
+
+        <router-outlet></router-outlet>
+
     </div>
 </div>
