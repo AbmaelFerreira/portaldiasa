@@ -11,3 +11,14 @@ legend.scheduler-border {
     font-weight: bold !important;
     text-align: left !important;
 }
+
+td {
+    border: 1px solid ;
+    border-left-width: 0;
+    min-width: 120px;
+    height: 18px;
+  }
+  
+  td:first-child {
+    border-left-width: 1px;
+  }
